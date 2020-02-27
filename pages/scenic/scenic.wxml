@@ -1,0 +1,63 @@
+<view class="swiper-tab">
+  <view wx:for="{{tabItemsArray}}" class="tab-item {{currentTab==index?'on':''}}" data-current="{{index}}"
+bindtap="swichNav">{{item.name}}</view>
+</view>
+
+<view class="{{currentTab==0?'show':'hidden'}}">
+
+<view class="line"></view>
+<view class="pagoda" wx:for="{{postsData.postList[3].baihua_scenic[currentTab].baihua}}">
+<view class="pagoda_img" bindtap="godetail" data-idx="{{index}}">
+<image class="img" src="{{item.img}}" bindtap="tower"></image>
+</view>
+<view class="pagoda_word">
+<view>景点名称:{{item.title}}</view>
+<view>地点:{{item.position}}</view>
+<view>游玩时间:{{item.time}}</view>
+<view>景点级别:{{item.level}}</view>
+<view>游玩佳季:{{item.play}}</view>
+</view>
+</view>
+
+</view>
+
+
+
+
+<view class="{{currentTab==1?'show':'hidden'}}">
+
+<view class="line"></view>
+<view class="pagoda" wx:for="{{postsData.postList[3].baihua_scenic[currentTab].baihua}}">
+<view class="pagoda_img" bindtap="godetail" data-idx="{{index}}">
+<image class="img" src="{{item.img}}" bindtap="tower"></image>
+</view>
+<view class="pagoda_word">
+<view>景点名称:{{item.title}}</view>
+<view>地点:{{item.position}}</view>
+<view>游玩时间:{{item.time}}</view>
+<view>景点级别:{{item.level}}</view>
+<view>游玩佳季:{{item.play}}</view>
+</view>
+</view>
+
+</view>
+
+
+<view class="{{currentTab==2?'show':'hidden'}}">
+
+<view class="line"></view>
+<view class="pagoda" wx:for="{{postsData.postList[3].baihua_scenic[currentTab].baihua}}">
+<view class="pagoda_img" bindtap="godetail" data-idx="{{index}}">
+<image class="img" src="{{item.img}}" bindtap="tower"></image>
+</view>
+<view class="pagoda_word">
+<view>景点名称:{{item.title}}</view>
+<view>地点:{{item.position}}</view>
+<view>游玩时间:{{item.time}}</view>
+<view>景点级别:{{item.level}}</view>
+<view>游玩佳季:{{item.play}}</view>
+</view>
+</view>
+
+</view>
+

@@ -1,0 +1,38 @@
+<!--pages/register.wxml-->
+<form bindsubmit='formSubmit' bindreset='formReset'>
+<view class='containerss'>
+<view class='reg'>注册</view>
+账号:
+<input type='text' name="userid" placeholder='请输入账号' confirm-type='done'/>
+密码：
+<input password type='number' name="password" placeholder='请输入8位密码' maxlength='8'/>
+姓名：
+<input type='text' name="username" placeholder='请输入姓名' confirm-type='done'/>
+性别：
+<radio-group name="sex">
+<label>
+<radio value='男' />男</label>
+<label>
+<radio value='女'/>女</label>
+</radio-group>
+电话:
+<input type='number' name="phone" placeholder='请输入电话号码'/>
+
+<view>生日</view>
+<picker name="birthday" mode="date" value='{{date}}' start="1980-09-26" end="2020-1-1" bindchange='pickerchange'>
+<text>{{date}}</text></picker>
+爱好:
+<checkbox-group name="interest">
+<label style='margin-right:30rpx;' wx:for="{{items}}">
+<checkbox value='{{item.value}}' />{{item.name}}</label>
+</checkbox-group>
+
+<view class='btn-form'>
+<button type='primary' size='mini' formType="submit">
+提交</button>
+<button class='bindreset' type='warn' size='mini' formType="reset">重置</button>
+
+<!-- <button type='primary' size='mini' bindtab="login"><navigator url="../login/login">登录</navigator></button> -->
+</view>
+</view>
+</form>

@@ -1,0 +1,7 @@
+<view class="line"></view>
+<view class="top">---我喜欢的景点---</view>
+
+<view wx:for="{{history}}" class="middle">
+<view class="font">{{item.name}}</view>
+<view class="imgs"><image class="img" src="{{item.img}}"></image></view>
+</view>

@@ -1,0 +1,32 @@
+/* pages/register.wxss */
+.containerss
+{
+  width:700rpx;
+  margin-top:20rpx;
+  margin-left:25rpx;
+}
+
+.reg{
+  width:100%;
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 32px;
+}
+
+.btn-form{
+  width:500rpx;
+  margin-left:125rpx;
+  margin-top: 125rpx;
+}
+
+.btnsubmit
+{
+  margin-left:0rpx;
+  width:150rpx;
+}
+
+.btnreset
+{
+  margin-left:150rpx;
+  width:150rpx;
+}

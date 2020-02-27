@@ -1,0 +1,26 @@
+<view class="line"></view>
+<view class="top">---惠东乡镇---</view>
+
+<view class="bg" wx:for="{{postsData.postList[1].baihua}}">
+
+<view class="baihua" bindtap="gobaihua" data-idx="{{index}}">
+
+<view class="baihua_img_box">
+<image class="baihua_img" src="{{item.img}}"></image>
+</view>
+
+<view class="baihua_landmark_font_box">
+<view class="baihua_landmark">
+<image src="../../../images/baihua/landmark.png" class="baihua_landmark_img"></image>
+<text decode="nbsp">&nbsp;&nbsp;{{item.position}}</text>
+</view>
+
+<view class="baihua_font">
+<text decode="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.content}}</text>
+</view>
+</view>
+
+
+</view>
+
+</view>

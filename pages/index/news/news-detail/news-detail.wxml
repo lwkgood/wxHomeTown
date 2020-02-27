@@ -1,0 +1,15 @@
+<import src="../../../../wxParse/wxParse.wxml"/>
+  
+  <view class="loading" hidden="{{isEnd}}"><image  src='../../../../images/loading.gif'></image>{{bottomText}}</view>
+
+  <view class="item">
+  <view class="itemtitle">{{newsDetail.data.result[index].title}}</view>
+  <view><image class="itemimg" src="{{newsDetail.data.result[index].img}}"></image></view>
+  <!-- <view>{{newsDetail.data.result[index].content}}</view> -->
+  <view class="content">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <view class="br"></view>
+  </view>
+
+

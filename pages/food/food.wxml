@@ -1,0 +1,11 @@
+<view  wx:for="{{list}}" wx:for-item='item'>
+    
+     <view class="h2">{{item.title}}</view>
+      <view class="list">
+      <view class="item" wx:for="{{item.list}}" wx:for-item='food' bindtap="gofooddetail" data-id='{{food._id}}'>
+      <image src='{{host}}{{food.img_url}}'></image> 
+      <text>{{food.title}}</text>
+      </view>
+      </view>
+
+</view>

@@ -1,0 +1,29 @@
+.h2{
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  color:firebrick;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.list .item{
+  width: 33.3%;
+  height: 240rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+.list .item text{
+  font-size: 32rpx;
+}
+
+.list .item image{
+  width: 90%;
+  height: 160rpx;
+  margin: 0 auto;
+}

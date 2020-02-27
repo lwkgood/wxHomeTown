@@ -1,0 +1,19 @@
+<view class="line"></view>
+<view class="top">---惠东{{postsData.postList[2].title}}---</view>
+
+
+<view class="img" wx:for="{{postsData.postList[2].context}}">
+
+<view class="img_box">
+
+<view class="img_box_font">
+{{item.font}}
+</view>
+
+<view class="img_box_img">
+<image class="img_box_img_style" src="{{item.img}}"></image>
+</view>
+
+</view>
+
+</view>

@@ -1,0 +1,43 @@
+.body{
+    background: #eee;
+}
+.img{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.imgs{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.font{
+  width: 95%;
+  margin: 0 auto;
+  font-size: 14px;
+  background: white;
+  border-radius: 5px;
+}
+
+.line{
+  background: #eee;
+  height: 3px;
+}
+
+.top{
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  color: cornflowerblue;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 3px;
+}
+
+.btn-move{
+  width: 50rpx;
+  height: 50rpx;
+  right: 10px;
+  position: absolute;
+}

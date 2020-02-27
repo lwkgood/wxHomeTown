@@ -1,0 +1,44 @@
+.line{
+  background: #eee;
+  height: 3px;
+}
+
+.top{
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  color: cornflowerblue;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 3px;
+}
+
+.img{
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+}
+.img_box{
+  background: palegoldenrod;
+  height: 140px;
+  width: 95%;
+  margin-top:10px;
+  border-radius: 5px;
+}
+.img_box_font{
+  height: 25px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+}
+.img_box_img{
+  height: 115px;
+  border-radius:0 0 5px 5px;
+}
+.img_box_img_style{
+  height: 115px;
+  width: 100%;
+  border-radius:0 0 5px 5px;
+}

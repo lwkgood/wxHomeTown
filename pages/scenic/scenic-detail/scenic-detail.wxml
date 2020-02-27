@@ -1,0 +1,14 @@
+<view class="body">
+
+<view class="img"><image class="imgs" src="{{postsData.postList[3].baihua_scenic[cur].baihua[idx].img}}"></image></view>
+
+<view class="line"></view>
+<view class="top">---简介---
+<image src="../../../images/love.png" bindtap="setStorage" class="btn-move" data-name="{{postsData.postList[3].baihua_scenic[cur].baihua[idx].title}}" data-img="{{postsData.postList[3].baihua_scenic[cur].baihua[idx].img}}"></image>
+</view>
+
+<view class="font"><text>{{postsData.postList[3].baihua_scenic[cur].baihua[idx].content}}</text></view>
+
+
+
+</view>

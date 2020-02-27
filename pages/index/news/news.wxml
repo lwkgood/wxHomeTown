@@ -1,0 +1,15 @@
+    <view class='search'>
+        <view class='searchItem'>
+            <image src='../../../images/search.png'/>
+            <input placeholder='请输入新闻关键词' bindblur="onSearch" />
+        </view>
+         <image  src="../../../images/xx.png" class="xx-img" bindtap="onCancelImgTap"></image>
+    </view>
+
+
+  <view class="item" wx:for="{{movieDetail.data.result}}">
+  <view class="itemtitle">{{item.title}}</view>
+  <view bindtap="gonewsdetail" data-idx="{{index}}"><image class="itemimg" src="{{item.img}}"></image></view>
+  <view class="itemsrc">{{item.pdate_src}}{{item.src}}</view>
+  <view class="br"></view>
+  </view>

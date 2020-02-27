@@ -1,0 +1,15 @@
+/* pages/foodcontent/foodcontent.wxss */
+.h2{
+  text-align: left;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size:18px;
+  margin-left: 10px;
+}
+
+.content{
+  font-size: 32rpx;
+  color:black;
+  line-height: 2;
+  padding: 10px;
+}

@@ -1,0 +1,102 @@
+<swiper class="posts-swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<block wx:for="{{postsData.postList[0].imgSrc}}" wx:key="*this">
+<swiper-item>
+<image src="{{item}}" class="slide-image"/>
+</swiper-item>
+</block>
+</swiper>
+
+<view class="line"></view>
+
+<view class="item">
+
+<view class="item_left" bindtap="township">
+<image class="img" src="../../images/item/house.png"></image>
+<view class="font">乡镇</view>
+</view>
+
+<view class="item_middle"  bindtap="history">
+<image class="img" src="../../images/item/history.png"></image>
+<view class="font">历史</view>
+</view>
+
+<view class="item_right" bindtap="news">
+<image class="img" src="../../images/item/culture.png"></image>
+<view class="font">新闻</view>
+</view>
+
+</view>
+
+
+<view class="line"></view>
+
+<view class="introduction">
+<view class="introduction_left">简介</view>
+<view class="introduction_right">更多></view>
+</view>
+
+<view class="line"></view>
+
+<view class="middle_top">
+
+<view class="middle_top_left">
+    <video id="myVideo2" class="myVideo"  src="{{postsData.postList[0].video}}" custom-cache="{{false}}">
+    </video>
+    <view  class="controls" style="display: {{ index == 2 ? 'none' : 'block' }};">
+    <cover-view>
+    <cover-image  src="../../images/2.jpg" data-id="2" bindtap="bindplay" style="height:120px;" />
+    </cover-view>
+    </view>
+</view>
+
+<view class="middle_top_right" style="font-size:13px;">
+<view class="middle_top_right_font">
+
+<view>地名:{{postsData.postList[0].title}}</view>
+<view class="br"></view>
+<view>别名:{{postsData.postList[0].alias}}</view>
+<view class="br"></view>
+<view>所属地区:{{postsData.postList[0].area}}</view>
+<view class="br"></view>
+<view>气候:{{postsData.postList[0].climatic}}</view>
+<view class="br"></view>
+<view>高中:{{postsData.postList[0].hightschool}}</view>
+<view class="br"></view>
+<view>景点:{{postsData.postList[0].scenicSpot}}</view>
+
+</view>
+</view>
+
+</view>
+
+
+<view class="line"></view>
+
+
+<view class="middle_bottom">
+
+<view class="middle_bottom_font">
+<view class="middle_bottom_font_box">
+<text decode="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;{{postsData.postList[0].content}}</text>
+</view>
+</view>
+
+<view class="middle_bottom_img">
+<image class="middle_bottom_img_size" src="{{postsData.postList[0].img}}"></image>
+</view>
+
+</view>
+
+
+<view class="line"></view>
+
+
+<view class="middle_img">
+<image class="middle_bottom_img_size" src="{{postsData.postList[0].img1}}"></image>
+</view>
+
+<view class="line"></view>
+
+<view class="introduction">
+<view style="margin:0 auto;">惠东欢迎你!</view>
+</view>

@@ -1,0 +1,25 @@
+.line{
+  background: #eee;
+  height: 3px;
+}
+
+.top{
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  color: cornflowerblue;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 3px;
+}
+
+.font{
+  text-align: center;
+}
+
+.imgs{
+  margin: 0 auto;
+}
+.img{
+  width: 100%;
+}

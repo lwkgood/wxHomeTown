@@ -1,0 +1,45 @@
+<swiper class="posts-swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<block wx:for="{{postsData.postList[1].baihua[index].images}}" wx:key="*this">
+<swiper-item>
+<image src="{{item}}" class="slide-image"/>
+</swiper-item>
+</block>
+</swiper>
+
+
+<view class="line"></view>
+<view class="top">---简介---</view>
+
+
+<view class="city">
+<view class="city_font">{{postsData.postList[1].baihua[index].content}}</view>
+</view>
+
+
+
+<view class="line"></view>
+<view class="top">---当地美食---</view>
+
+<view class="pagoda" wx:for="{{postsData.postList[1].baihua[index].food}}">
+
+<view class="pagoda_img">
+
+<view>
+<image class="img" src="{{item.img}}"></image>
+</view>
+
+</view>
+<view class="pagoda_word"><text decode="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;{{item.js}}</text></view>
+
+</view>
+
+
+
+<view class="line"></view>
+<view class="top">---地图---</view>
+
+
+<view>
+<map  class="map" id="myMap" style="width:100%;height:200px;" latitude="{{postsData.postList[1].baihua[index].latitude}}" longitude="{{postsData.postList[1].baihua[index].longitude}}" markers="{{markers}}" polyline="{{polyline}}" class="page-section page-section-gap">
+</map>
+</view>

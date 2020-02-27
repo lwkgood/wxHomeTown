@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/scenic/scenic",
+    "pages/index/index",
+    "pages/index/township/township",
+    "pages/food/food",
+    "pages/foodcontent/foodcontent",
+    "pages/index/township/township-detail/township-detail-baihua/township-detail-baihua",
+    "pages/index/history/history",
+    "pages/index/news/news",
+    "pages/index/news/news-detail/news-detail",
+    "pages/scenic/scenic-detail/scenic-detail",
+    "pages/user/me/me",
+    "pages/user/user",
+    "pages/user/login/login",
+    "pages/user/user-register/user-register",
+    "pages/user/collection/collection"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "HUI DONG",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#eee",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab/home2.png",
+        "selectedIconPath": "images/tab/home1.png"
+      },
+      {
+        "pagePath": "pages/scenic/scenic",
+        "text": "景点",
+        "iconPath": "images/tab/scenic2.png",
+        "selectedIconPath": "images/tab/scenic1.png"
+      },
+      {
+        "pagePath": "pages/food/food",
+        "text": "美食",
+        "iconPath": "images/tab/food2.png",
+        "selectedIconPath": "images/tab/food1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/tab/user2.png",
+        "selectedIconPath": "images/tab/user1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
